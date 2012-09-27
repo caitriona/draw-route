@@ -3,7 +3,7 @@
 * Draws a dotted route on a map. Uses jquery.
 *
 */
-$(document).ready(function() {
+$(window).load(function() {
 
 	//start & end coordinates of the straight lines that make up the route
 	var coords = [
