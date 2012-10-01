@@ -7,18 +7,21 @@ $(window).load(function() {
 
 	//start & end coordinates of the straight lines that make up the route
 	var coords = [
-		[263,532]
-		,[230,476]
-		,[481,176]
-		,[455,144]
-		,[443,112]
-		,[473,77]
-		,[501,61]
-		,[512,75]
-		,[548,102]
-		,[542,118]
-		,[543,139]
-		,[526,154]
+		[578,419]
+		,[408,499]
+		,[354,415]
+		,[293,388]
+		,[229,388]
+		,[189,372]
+		,[176,371]
+		,[177,350]
+		,[179,335]
+		,[181,296]
+		,[185,284]
+		,[181,244]
+		,[149,241]
+		,[58,215]
+		,[69,149]
 	],
 	allcoords = getAllCoords(coords); // get all the coordinates for the full route
 	revealNextPoint(allcoords); //call the function to reveal the points on the map
@@ -81,7 +84,7 @@ var revealNextPoint = function(allcoords){
 
 		$(span).animate({
 			opacity: 1
-		}, 20, "linear", function(){revealNextPoint(allcoords)} );
+		}, 70, "linear", function(){revealNextPoint(allcoords)} );
 
 	}
 };
